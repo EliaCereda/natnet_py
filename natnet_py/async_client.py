@@ -708,6 +708,7 @@ class AsyncClient:
                 return False
         else:
             self.logger.info(f"Connecting to {server_address} ...")
+            self.cmd_protocol._server = server
             # TODO(Jerome): do I really need to call it now?
             self.server_info = await self.cmd_protocol.connect(timeout)
             if not self.server_info:
