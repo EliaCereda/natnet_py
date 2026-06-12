@@ -1,0 +1,11 @@
+[package]
+name = "natnet_py"
+version = "0.1.0"
+
+[package.build]
+backend = { name = "pixi-build-python", version = "0.5.*" }
+
+[package.host-dependencies]
+setuptools = ">=61.0"
+wheel = "*"
+setuptools-git-versioning = ">=2.0,<3"
