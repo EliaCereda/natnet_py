@@ -3,7 +3,7 @@ name = "natnet_py"
 version = "0.1.0"
 
 [package.build]
-backend = { name = "pixi-build-python", version = "0.5.*" }
+backend = { name = "pixi-build-python", version = ">=0.5,<1.0" }
 
 [package.host-dependencies]
 setuptools = ">=61.0"
